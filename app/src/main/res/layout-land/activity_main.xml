@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/jinzhi102"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/result"
+        android:layout_marginLeft="5dp"
+        android:text="进制10-2"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi108"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi102"
+        android:text="进制10-8"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi1016"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi108"
+        android:text="进制10-16"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/jinzhi210"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi102"
+        android:layout_marginLeft="5dp"
+        android:text="进制2-10"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi810"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi102"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi210"
+        android:text="进制8-10"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi1610"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi102"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi810"
+        android:text="进制16-10"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/jinzhi28"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi210"
+        android:layout_marginLeft="5dp"
+        android:text="进制2-8"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi216"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi210"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi28"
+        android:text="进制2-16"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi82"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi210"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi216"
+        android:text="进制8-2"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/jinzhi162"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi28"
+        android:layout_marginLeft="5dp"
+        android:text="进制16-2"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/jinzhi816"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi28"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi162"
+        android:text="进制8-16"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/jinzhi168"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi28"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi816"
+        android:text="进制16-8"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi162"
+        android:layout_marginLeft="5dp"
+        android:text="sin"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi162"
+        android:layout_toRightOf="@id/sin"
+        android:layout_marginLeft="5dp"
+        android:text="cos"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/jinzhi162"
+        android:layout_toRightOf="@id/cos"
+        android:layout_marginLeft="5dp"
+        android:text="tan"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi1016"
+        android:text="帮助"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/help"
+        android:text="清除"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/kuohao1"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/clear"
+        android:text="("
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/kuohao2"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/kuohao1"
+        android:text=")"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/jia"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@id/kuohao2"
+        android:layout_marginLeft="5dp"
+        android:text="+"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/lenght_mcm"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/help"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi1016"
+        android:text="长度m-cm"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/help"
+        android:layout_toRightOf="@id/lenght_mcm"
+        android:layout_marginLeft="5dp"
+        android:text="7"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/help"
+        android:layout_toRightOf="@id/button7"
+        android:layout_marginLeft="5dp"
+        android:text="8"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/help"
+        android:layout_toRightOf="@id/button8"
+        android:layout_marginLeft="5dp"
+        android:text="9"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/jian"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/help"
+        android:layout_toRightOf="@id/button9"
+        android:layout_marginLeft="5dp"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/lenght_mmm"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mcm"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi1016"
+        android:text="长度m-mm"
+        android:textAllCaps="false"
+        android:textSize="8sp" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mcm"
+        android:layout_toRightOf="@id/lenght_mmm"
+        android:layout_marginLeft="5dp"
+        android:text="4"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mcm"
+        android:layout_toRightOf="@id/button4"
+        android:layout_marginLeft="5dp"
+        android:text="5"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mcm"
+        android:layout_toRightOf="@id/button5"
+        android:layout_marginLeft="5dp"
+        android:text="6"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/cheng"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mcm"
+        android:layout_toRightOf="@id/button6"
+        android:layout_marginLeft="5dp"
+        android:text="×"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tiji1"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mmm"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/jinzhi1016"
+        android:text="体积m-dm"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mmm"
+        android:layout_toRightOf="@id/tiji1"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mmm"
+        android:layout_toRightOf="@id/button1"
+        android:layout_marginLeft="5dp"
+        android:text="2"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mmm"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginLeft="5dp"
+        android:text="3"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/chu"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/lenght_mmm"
+        android:layout_toRightOf="@id/button3"
+        android:layout_marginLeft="5dp"
+        android:text="÷"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tiji2"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tiji1"
+        android:layout_toRightOf="@id/jinzhi1016"
+        android:layout_marginLeft="5dp"
+        android:text="体积m-cm"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/baifen"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tiji1"
+        android:layout_toRightOf="@id/tiji2"
+        android:layout_marginLeft="5dp"
+        android:text="%"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tiji1"
+        android:layout_toRightOf="@id/baifen"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/dian"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tiji1"
+        android:layout_toRightOf="@id/button0"
+        android:layout_marginLeft="5dp"
+        android:text="."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/deng"
+        android:layout_width="75sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tiji1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/dian"
+        android:text="="
+        android:textSize="20sp" />
+</RelativeLayout>
